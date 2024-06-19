@@ -11,6 +11,7 @@
 Despite the success of existing methods in addressing data heterogeneity in FL, most existing methods concentrate on single shift types. However, new challenges posed by the simultaneous occurrence of multiple types of distribution shifts can not be resolved:
 - Methods that training single global models suffer from a significant performance drop when dealing with concept shift;
 - Existing multi-model approaches cannot distinguish between different shift types and tend to group data with the same labels into the same clusters, thereby tending to overfit local distributions;
+
 Therefore, we design FedRC to *separating clients with concept shifts into different clusters, while keeping clients without concept shifts in the same cluster*.
 
 <div align="center">
