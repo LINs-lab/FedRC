@@ -36,13 +36,13 @@ tensorboard
 
 ## Data
 
-Please split data by the following scripts. The [make_cifar_c.py](create_c\make_cifar_c.py) uses CIFAR100 dataset by default.
+Please split data by the following scripts. The [make_cifar_c.py](create_c/make_cifar_c.py) uses CIFAR100 dataset by default.
 ```
-python create_c\make_cifar_c.py
+python create_c/make_cifar_c.py
 
-python create_c\make_fmnist_c.py
+python create_c/make_fmnist_c.py
 
-python create_c\make_tinyimagenet_c.py
+python create_c/make_tinyimagenet_c.py
 ```
 
 
@@ -53,7 +53,7 @@ python create_c\make_tinyimagenet_c.py
 python run_experiment.py cifar10-c FedRC --n_learners 3 --n_rounds 200 --bz 128 --lr 0.06 --lr_scheduler constant --log_freq 1 --device 0 --optimizer sgd --seed 1 --verbose 1 --suffix 06-lr
 
 ```
-All the supported algorithms can be found in [constants.py](utils\constants.py). The default models are avaliable in [models.py](models.py). The detailed explanation of arguments can be found in [args.py](utils\args.py).
+All the supported algorithms can be found in [constants.py](utils/constants.py). The default models are avaliable in [models.py](models.py). The detailed explanation of arguments can be found in [args.py](utils/args.py).
 
 ## Acknowledgement
 We are grateful for the following awesome projects:
